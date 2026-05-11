@@ -1,120 +1,81 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+ <title>International Technical College</title>
+		
+		
 
-<meta charset="UTF-8">
-<title>Saudi Airline - Home</title>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<html>
-<head>
-<style>
-body {
-  background-color: white;
-}
-</style>
 </head>
 <body>
-</head>
-
-<body>
-
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v25.0&appId=APP_ID"></script>
 
 
-<header>
-
-<img src="logo.png" alt="Saudi Airline Logo" width="260">
-
-
-
+    <header>
+<img src="logo.png.png" alt="Logo" width="50" height="40">
 <nav>
-
-<a href="home.html">Home</a> |
-
-<a href="login.html">Login</a>
-
+<a href="#">Home</a>
+<a href="#">Information About College</a>
 </nav>
 
+<button class="signup-btn">Sign Up</button>
 </header>
 
+<section class="home">
+<h1>Welcome to International Technical College</h1>
 
+<div class="login-box">
+<h2>Login</h2>
 
-<hr>
+<input type="text" id="username" placeholder="Enter Email">
+<input type="password" id="password" placeholder="Enter Password">
 
+<button onclick="login()">Login</button>
 
+ </div>
+</section>
 
-<main>
+<section class="video-section">
 
-<h1>Welcome to Saudi Airline</h1>
-
-
-
-<h2>Search Flights</h2>
-
-<form>
-
-<label>From:</label>
-
-<input type="text"><br><br>
-
-
-
-<label>To:</label>
-
-<input type="text"><br><br>
-
-
-
-<label>Date:</label>
-
-<input type="date"><br><br>
-
-
-
-<button type="submit">Search</button>
-</form>
-
-
-
-
-<h2>Special Offers</h2>
-
-<p>Enjoy comfortable and safe flights with Saudi Airline.</p>
-
-</main>
-
-
-
-<hr>
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Yc2cnEtr5ZI?si=hTq_Mt8PmJMaQLLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+</section>
 
 <footer>
+<div class="footer-content">
+<p>Contact Us: Email: ggggggg@ic.edu.sa | Phone: 0555555555</p>
+<p>Location: AlKhobar</p>
+<div class="social-links">
+<a href="https://www.linkedin.com/company/international-technical-female-college-alkhobar/">LinkedIn</a>
 
-<p>Contact us: info@saudiairline.com</p>
+ <br><br>
 
-
-
-<p>
-
-<a href="#">Facebook</a> |
-
-<a href="#">Twitter</a>
-
-</p>
-
-
-
-<a href="#">Accessibility</a>
-
+<a href="https://www.instagram.com/itc_khobar?igsh=MWlnbmF6bm44Y3E2dg=" target="_blank">Instagram</a>
+</div>
+</div>
 </footer>
 
+<script>
+function login() {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    let correctEmail = "admin@itc.edu.sa";
+    let correctPassword = "12345";
+
+    if (username === correctEmail && password === correctPassword) {
+        localStorage.setItem("loggedIn", "true");
+        alert("Login successful!");
+        window.location.href = "info.php";
+    } else {
+        alert("Incorrect email or password");
+    }
+}
+</script>
 
 
 </body>
-
 </html>

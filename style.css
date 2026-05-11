@@ -1,0 +1,111 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f5f7fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4a90e2;
+    color: white;
+    padding: 30px 100px;
+	
+}
+
+
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #dbe9ff;
+}
+
+.signup-btn {
+    background: white;
+    color: #4a90e2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background: #e6f0ff;
+}
+
+.home {
+    text-align: center;
+    padding: 60px;
+}
+
+.login-box {
+    background: white;
+    padding: 65px;
+    width: 260px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #ccc;
+    transition: 0.3s;
+}
+
+.login-box:hover {
+    transform: translateY(-5px);
+}
+
+.login-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s;
+	font-size: 20px;
+}
+
+.login-box button:hover {
+    background: #357bd8;
+}
+
+.video-section {
+    text-align: center;
+    padding: 30px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links a {
+    display: block;
+    color: #4a90e2;
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+
